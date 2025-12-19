@@ -1,0 +1,35 @@
+# Key files with Claude's classifications - DO NOT COMMIT
+key_*.csv
+validation_samples/production/key_*.csv
+
+# Human coded results (users download locally)
+coded_*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Pickle files (large data) - EXCEPT category definitions
+# Note: argument_categories.pkl and data_categories.pkl ARE committed
+*.pkl
+!validation_samples/production/argument_categories.pkl
+!validation_samples/production/data_categories.pkl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
